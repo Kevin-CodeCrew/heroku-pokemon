@@ -13,14 +13,15 @@
     "npm": "^6.14.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "serve": "^11.3.2"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "client-start": "serve -s build",
+    "heroku-postbuild": "npm run build && npm run client-start"
   },
   "eslintConfig": {
     "extends": "react-app"
